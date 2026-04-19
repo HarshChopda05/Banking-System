@@ -1,22 +1,14 @@
 package com.example.BankingApp.DTO;
 
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class WithdrawalRequest {
 
     private Double amount;
 
-
-    public WithdrawalRequest(){
-    }
-    public WithdrawalRequest(Double amount) {
-        this.amount = amount;
-    }
-
-    public Double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(Double amount) {
-        this.amount = amount;
-    }
 
 }

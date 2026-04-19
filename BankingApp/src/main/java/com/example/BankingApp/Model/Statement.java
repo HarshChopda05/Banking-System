@@ -2,15 +2,15 @@ package com.example.BankingApp.Model;
 
 import com.example.BankingApp.TransactionType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
-import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "statement")
 public class Statement {
 
@@ -41,54 +41,4 @@ public class Statement {
     @Column(name = "amount")
     private double amount;
 
-    public Statement(){
-
-    }
-    public double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-
-    public Account getFromAccount() {
-        return fromAccount;
-    }
-
-    public void setFromAccount(Account fromAccount) {
-        this.fromAccount = fromAccount;
-    }
-
-    public Account getToAccount() {
-        return toAccount;
-    }
-
-    public TransactionType getType() {
-        return type;
-    }
-
-    public void setType(TransactionType type) {
-        this.type = type;
-    }
-
-    public void setToAccount(Account toAccount) {
-        this.toAccount = toAccount;
-    }
-
-    public Integer getNumber() {
-        return number;
-    }
-
-    public void setNumber(Integer number) {
-        this.number = number;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 }
