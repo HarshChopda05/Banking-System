@@ -2,10 +2,15 @@ package com.example.BankingApp.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "account")
 public class Account {
 
@@ -28,49 +33,5 @@ public class Account {
     @OneToMany(mappedBy = "toAccount")
     @JsonIgnore
     private List<Statement> receivedStatements;
-
-    public Account(){
-
-    }
-
-    public long getAcctNumber() {
-        return acctNumber;
-    }
-
-    public void setAcctNumber(long acctNumber) {
-        this.acctNumber = acctNumber;
-    }
-
-    public Double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(Double balance) {
-        this.balance = balance;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Statement> getSentStatements() {
-        return sentStatements;
-    }
-
-    public void setSentStatements(List<Statement> sentStatements) {
-        this.sentStatements = sentStatements;
-    }
-
-    public List<Statement> getReceivedStatements() {
-        return receivedStatements;
-    }
-
-    public void setReceivedStatements(List<Statement> receivedStatements) {
-        this.receivedStatements = receivedStatements;
-    }
 
 }
