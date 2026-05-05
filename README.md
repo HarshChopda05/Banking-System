@@ -3,8 +3,8 @@
 A Spring Boot-based Banking System API that allows users to perform core banking operations such as account creation, deposits, withdrawals, transfers, and viewing account statements.
 
 🚀 Features
-✅ Open a new bank account
-💰 Deposit money
+- ✅ Open a new bank account
+- 💰 Deposit money
 💸 Withdraw money
 🔄 Transfer money between accounts
 📊 View account balance
