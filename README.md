@@ -1,8 +1,8 @@
-#🏦 Banking System API
+🏦 Banking System API
 
 A Spring Boot-based Banking System API that allows users to perform core banking operations such as account creation, deposits, withdrawals, transfers, and viewing account statements.
 
-##🚀 Features
+🚀 Features
 - ✅ Open a new bank account
 - 💰 Deposit money
 - 💸 Withdraw money
@@ -13,9 +13,9 @@ A Spring Boot-based Banking System API that allows users to perform core banking
 
 This project is based on requirements defined in the assignment.
 
-##📌 API Endpoints
+📌 API Endpoints
 
-###1️⃣ Open Account
+1️⃣ Open Account
 
 POST /account/openAccount
 
@@ -28,7 +28,7 @@ Request Body:
 }
 
 
-###2️⃣ Deposit Money
+2️⃣ Deposit Money
 
 PATCH /account/deposit/{acct_number}
 
@@ -39,7 +39,7 @@ Request Body:
 }
 
 
-###3️⃣ Withdraw Money
+3️⃣ Withdraw Money
 
 PATCH /account/withdraw/{acct_number}
 
@@ -50,7 +50,7 @@ Request Body:
 }
 
 
-###4️⃣ Transfer Money
+4️⃣ Transfer Money
 
 POST /account/transfer
 
@@ -64,21 +64,21 @@ Request Body:
 
 
 
-###5️⃣ Show Balance
+5️⃣ Show Balance
 
 GET /account/showBalance/{acct_number}
 
 
-###6️⃣ Show All Accounts
+6️⃣ Show All Accounts
 
 GET /account/showAll
 
 
-###7️⃣ Transfer via Statement Controller
+7️⃣ Transfer via Statement Controller
 
 PUT /statement/transferMoney/{fromAcctNumber}
 
-##🗃️ Database Schema
+🗃️ Database Schema
 
 ###Account
 
@@ -100,13 +100,13 @@ PUT /statement/transferMoney/{fromAcctNumber}
 | amount           | Double  |
 
 
-###🔄 Entity Relationships:
+🔄 Entity Relationships:
 
 - One Account → Many Statements (Sent & Received)
 - Many Statements → One Account
 
 
-###👨‍💻 Author
+👨‍💻 Author
 Harsh Chopda
 
 
