@@ -26,6 +26,7 @@ Request Body:
   "name": "Harsh",
   "balance": 5000
 }
+
 2️⃣ Deposit Money
 
 PATCH /account/deposit/{acct_number}
@@ -35,6 +36,7 @@ Request Body:
 {
   "amount": 1000
 }
+
 3️⃣ Withdraw Money
 
 PATCH /account/withdraw/{acct_number}
@@ -44,6 +46,7 @@ Request Body:
 {
   "amount": 500
 }
+
 4️⃣ Transfer Money
 
 POST /account/transfer
@@ -55,9 +58,11 @@ Request Body:
   "toAccount": 9876543210,
   "amount": 1000
 }
+
 5️⃣ Show Balance
 
 GET /account/showBalance/{acct_number}
+
 
 6️⃣ Show All Accounts
 
