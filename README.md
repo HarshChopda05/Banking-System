@@ -2,8 +2,6 @@
 
 A Spring Boot-based Banking System API that allows users to perform core banking operations such as account creation, deposits, withdrawals, transfers, and viewing account statements.
 
-
-
 🚀 Features
 ✅ Open a new bank account
 💰 Deposit money
@@ -11,14 +9,13 @@ A Spring Boot-based Banking System API that allows users to perform core banking
 🔄 Transfer money between accounts
 📊 View account balance
 📜 Generate transaction statements
-
-
 🧠 API Design Overview
 
-This project is based on requirements defined in the assignment:
+This project is based on requirements defined in the assignment.
 
 📌 API Endpoints
 1️⃣ Open Account
+
 POST /account/openAccount
 
 Request Body:
@@ -28,8 +25,8 @@ Request Body:
   "name": "Harsh",
   "balance": 5000
 }
-
 2️⃣ Deposit Money
+
 PATCH /account/deposit/{acct_number}
 
 Request Body:
@@ -37,8 +34,8 @@ Request Body:
 {
   "amount": 1000
 }
-
 3️⃣ Withdraw Money
+
 PATCH /account/withdraw/{acct_number}
 
 Request Body:
@@ -46,8 +43,8 @@ Request Body:
 {
   "amount": 500
 }
-
 4️⃣ Transfer Money
+
 POST /account/transfer
 
 Request Body:
@@ -58,13 +55,12 @@ Request Body:
   "amount": 1000
 }
 5️⃣ Show Balance
+
 GET /account/showBalance/{acct_number}
 
 6️⃣ Show All Accounts
-GET /account/showAll
 
-7️⃣ Transfer via Statement Controller
-PUT /statement/transferMoney/{fromAcctNumber}
+GET /account/showAll
 
 
 🗃️ Database Schema
@@ -74,7 +70,6 @@ PUT /statement/transferMoney/{fromAcctNumber}
 | acct_number | Long   |
 | name        | String |
 | balance     | Double |
-
 
 Statement Table
 
@@ -87,11 +82,16 @@ Statement Table
 | type             | Enum    |
 | amount           | Double  |
 
-🔄 Entity Relationships
-- One Account → Many Statements (Sent & Received)
-- Many Statements → One Account
 
+🔄 Entity Relationships
+One Account → Many Statements (Sent & Received)
+Many Statements → One Account
 
 
 👨‍💻 Author
 Harsh Chopda
+
+
+7️⃣ Transfer via Statement Controller
+
+PUT /statement/transferMoney/{fromAcctNumber}
