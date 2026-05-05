@@ -2,7 +2,7 @@
 
 A Spring Boot-based Banking System API that allows users to perform core banking operations such as account creation, deposits, withdrawals, transfers, and viewing account statements.
 
-🔗 GitHub Repository: https://github.com/HarshChopda05/Banking-System
+
 
 🚀 Features
 ✅ Open a new bank account
