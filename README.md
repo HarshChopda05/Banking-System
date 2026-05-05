@@ -5,15 +5,16 @@ A Spring Boot-based Banking System API that allows users to perform core banking
 🚀 Features
 - ✅ Open a new bank account
 - 💰 Deposit money
-💸 Withdraw money
-🔄 Transfer money between accounts
-📊 View account balance
-📜 Generate transaction statements
-🧠 API Design Overview
+- 💸 Withdraw money
+- 🔄 Transfer money between accounts
+- 📊 View account balance
+- 📜 Generate transaction statements
+- 🧠 API Design Overview
 
 This project is based on requirements defined in the assignment.
 
 📌 API Endpoints
+
 1️⃣ Open Account
 
 POST /account/openAccount
